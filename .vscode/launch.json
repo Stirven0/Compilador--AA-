@@ -1,0 +1,31 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "PyDebug: Main with Example",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/Compilador/main.py",
+            "console": "integratedTerminal",
+            "args": ["-f", "${workspaceFolder}/Compilador/examples/hello.py"]
+        },
+        {
+            "name": "PyDebug: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "args": [],
+            "justMyCode": true
+        },
+        {
+            "name": "PyDebug: Main File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/Compilador/main.py",
+            "console": "integratedTerminal",
+            "args": [],
+            "justMyCode": true
+        }
+    ]
+}

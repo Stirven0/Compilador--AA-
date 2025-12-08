@@ -4,8 +4,8 @@ venv/
 .env
 .env.example
 
-.vscode/
-vscode/
+# .vscode/
+# vscode/
 
 *.pyc
 *.pyo
