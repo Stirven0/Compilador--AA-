@@ -1,5 +1,6 @@
 import argparse
 import sys
+from core.lexer import Lexer
 
 class Compiler:
     def __init__(self, debug_mode: bool = False, backend: str = 'bytecode'):
@@ -8,7 +9,16 @@ class Compiler:
 
     def compile(self, source: str, filename: str = "<stdin>") -> bool:
         """Compila el código fuente a código objeto. Retorna True si la compilación fue exitosa."""
-        return True
+        try:
+            # 1. Lexer
+            lexer = Lexer(source)
+
+        except Exception as e:
+            print(f"❌ Error Critico: {e}")
+            if self.debug:
+                import traceback
+                traceback.print_exc()
+            return False
 
 
 def main():

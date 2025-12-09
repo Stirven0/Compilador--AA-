@@ -10,4 +10,4 @@ venv/
 *.pyc
 *.pyo
 *.pyd
-__pycache__
+**/__pycache__/**
